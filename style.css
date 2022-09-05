@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #191919 !important;
+    color: white !important;
+    font-family: 'Source Code Pro', monospace !important;
+
+
+}
+nav
+{
+    border-bottom: px solid #f9004d;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.8rem !important;
+    margin-left: 40px;
+}
+
+nav img
+{
+    width: 100%;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-item a {
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    font-size: 1.1rem;
+
+}
+
+
+.navbar .navbar-nav .nav-item a {
+    margin-right: 7px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: " ";
+    background-color: #f9004d !important;
+    width: 0%;
+    height: 4px;
+    margin: 0 auto;
+    transition: all 0.4s;
+}
+
+.navbar .navbar-nav .nav-item a:hover::after {
+    width: 100%;
+}
+
+
+/* navbar transparent  when scrolled top */
+
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+}
+
+
+.bg-t {
+    transition: 500ms ease-in;
+    background-color: transparent;
+}
+
+/* change navbar color on scroll class */
+
+.bg-t.scrolled {
+    transition: 500ms ease-in;
+    background-color: #f9004d;
+}
+
+
+
+
+                                /* STYLING INTRO SECTION */
+
+
+
+
+#intro {
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+#intro h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 2px;
+}
+
+#intro h1 {
+
+    font-size: 3.5rem;
+    color: #f9004d;
+    font-weight: bolder;
+}
+#intro h5{
+    font-size: 1.5rem;
+}
+
+
+#intro h3 {
+    display: inline-block;
+    padding-right: 5px;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #f9004d;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .15em; Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 80%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #f9004d;
+    }
+}
+
+#intro img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px #f9004d;
+}
+
+#intro p {
+    width: 100%;
+}
+
+                        
+
+                        /* STYLING ABOUT SECTION */
+
+
+
+#about {
+    width: 100%;
+    min-height: 100vh;
+    /* padding: 50px 0 ; */
+}
+
+#about h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 2px solid #f9004d;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+#about span {
+    font-size: 30px;
+}
+
+#about p {
+    font-size: 18px;
+    width: 85%;
+    letter-spacing: 1px;
+    line-height: 27px;
+}
+
+                    
+
+
+                            /* STYLING SKILLS SECTION */
+
+
+
+
+#skills {
+    width: 100%;
+    /* padding: 80px 0; */
+    min-height: 100vh;
+}
+
+#skills h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 2px solid #f9004d;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+#skills span {
+    font-size: 30px;
+}
+
+#skills .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills .bar {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#skills .html {
+    position: absolute;
+    width: 85%;
+    height: 8px;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f9004d;
+    animation: html 2s;
+}
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+#skills .css {
+    position: absolute;
+    width: 80%;
+    height: 8px;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f9004d;
+    animation: css 2s;
+}
+
+@keyframes css {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+#skills .bootstrap {
+    position: absolute;
+    width: 75%;
+    height: 8px;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f9004d;
+    animation: bootstrap 2s;
+}
+
+@keyframes bootstrap {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+#skills .javascript {
+    position: absolute;
+    width: 50%;
+    height: 8px;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f9004d;
+    animation: js 2s;
+}
+
+@keyframes js {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+
+
+                    /* STYLING SERVICES SECTION */
+
+
+
+#services {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 85px;
+}
+
+#services .card {
+    background-color: #f9004d;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+#services .card img {
+    width: 25%;
+}
+
+#services .card h4 {
+    font-weight: bold;
+}
+
+#services .width {
+    width: 95%;
+}
+
+#services span {
+    font-size: 34px;
+}
+
+#services h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #f9004d;
+    display: inline-block;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+
+
+                            /* STYLING RESUME SECTION */
+
+
+
+#resume {
+    width: 100%;
+    min-height: 50vh;
+    padding: 100px 0;
+}
+#resume h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #f9004d;
+    display: inline-block;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+#resume span
+{
+    font-size: 34px;
+}
+
+#resume button {
+    padding: 10px;
+    color: white;
+    background-color: #f9004d;
+    border-radius: 5px;
+
+}
+#resume button a {
+    
+    color: white;
+    text-decoration: none;
+
+}
+.bounce {
+    text-align:center;
+    margin-top: 30px;
+    padding:20px;  
+    background:#f9004d;
+   animation: bounce 1s infinite;
+  }
+  @keyframes bounce {
+    0% {
+transform: scale(1,1) translate(0px, 0px);
+}
+
+30%{
+transform: scale(1,0.8) translate(0px, 10px); 
+}
+
+75%{
+transform: scale(1,1.1) translate(0px, -25px); 
+}
+
+100% {
+transform: scale(1,1) translate(0px, 0px);
+}
+}
+
+#resume button:hover
+{
+    animation: none;
+}
+
+
+
+                        /* STYLING CONTACT SECTION */
+
+
+#contact
+{
+    width: 100%;
+    padding: 50px 0;
+}
+#contact h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #f9004d;
+    display: inline-block;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+#contact span
+{
+    font-size: 34px;
+}
+#contact img
+{
+    width: 3%;
+    transition: all 0.4s ease;
+
+}
+#contact img:hover
+{
+    transform: scale(1.1);
+}
+
+#contact .copyright
+{
+    font-size: 12px;
+}
+
+
+                               /* !----MEDIA QUERIES-----! */
+
+
+@media only screen and (max-width:1000px) {
+    #intro img {
+        display: none;
+    }
+
+    .bg-t-s
+    {
+        background-color: #f9004d;
+    }
+}
+
+@media only screen and (max-width:768px)
+{
+    .navbar-brand {
+        color: white;
+        font-size:25px !important;
+        margin-left: 0px;
+    }
+    #intro
+    {
+        padding: 0px 0px;
+    }
+    #intro h1 {
+
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+            }
+    #intro h5{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    #intro h3
+    {
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    #intro p
+    {
+        font-size: 14px;
+    }
+    #about
+    {
+        padding: 100px 0;
+    }
+    #about p 
+    {
+        width: 100%;
+        font-size: 14px;
+    }
+    #about h1
+    {
+        font-size: 30px;
+    }
+    #about span
+    {
+        font-size: 24px;
+    }
+    #skills
+    {
+        padding: 100px 0;
+    }
+    #skills h1
+    {
+        font-size: 30px;
+    }
+    #skills span
+    {
+        font-size: 24px;
+    }
+    #skills p
+    {
+        font-size: 14px;
+    }
+    #services
+    {
+        padding: 100px 0;
+    }
+    #services h1
+    {
+        font-size: 30px;
+    }
+    #services span
+    {
+        font-size: 24px;
+    }
+    #services p
+    {
+        font-size:14px;
+    }
+    #services .card
+    {
+        width: 80%;
+    }
+    #services .card h4
+    {
+        font-size: 18px;
+    }
+    #services .card p
+    {
+        font-size: 14px;
+    }
+    #services .card img 
+    {
+        width: 20%;
+    }
+
+    #resume h1 
+    {
+        font-size: 30px;
+    }
+    #resume span 
+    {
+        font-size: 24px;
+    }
+    #resume p 
+    {
+        font-size: 14px;
+    }
+    #contact h1 
+    {
+        font-size: 30px;
+    }
+    #contact span 
+    {
+        font-size: 24px;
+    }
+    #contact img
+    {
+        width: 5%;
+    }
+    #contact h3
+    {
+        font-size: 25px;
+    }
+    
+}
+
+@media only screen and (max-width:375px)
+{
+
+    #services .card
+    {
+        width: 100%;
+        height: 95%;
+    }
+
+    #contact h3 
+    {
+        font-size: 14px; 
+        text-align: center;
+    }
+
+    #contact img 
+    {
+        width: 8%;
+    }
+}
