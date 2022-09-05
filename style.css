@@ -652,6 +652,11 @@ transform: scale(1,1) translate(0px, 0px);
         font-size: 12px;
         
     }
+
+    #skills h5
+    {
+        font-size: 11px;
+    }
     #services p
     {
         font-size: 12px;
