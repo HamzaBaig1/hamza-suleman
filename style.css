@@ -646,4 +646,13 @@ transform: scale(1,1) translate(0px, 0px);
     {
         width: 8%;
     }
+
+    #skill p
+    {
+        font-size: 12px;
+    }
+    #service p
+    {
+        font-size: 12px;
+    }
 }
