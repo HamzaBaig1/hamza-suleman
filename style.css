@@ -630,6 +630,11 @@ transform: scale(1,1) translate(0px, 0px);
 @media only screen and (max-width:420px)
 {
 
+    #intro p 
+    {
+        font-size: 12px;
+    }
+    
     #services .card
     {
         width: 100%;
@@ -658,6 +663,11 @@ transform: scale(1,1) translate(0px, 0px);
         font-size: 11px;
     }
     #services p
+    {
+        font-size: 12px;
+    }
+
+    #resume p
     {
         font-size: 12px;
     }
