@@ -203,7 +203,7 @@ h6 {
 
 #about p {
     font-size: 18px;
-    width: 85%;
+    width: 100%;
     letter-spacing: 1px;
     line-height: 27px;
 }
@@ -580,7 +580,7 @@ transform: scale(1,1) translate(0px, 0px);
     }
     #services .card
     {
-        width: 80%;
+        width: 100%;
     }
     #services .card h4
     {
