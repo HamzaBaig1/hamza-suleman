@@ -10,6 +10,8 @@ body {
     overflow-x: hidden;
 }
 
+                        /* UTILITY CLASSES */
+
 .justify {
     text-align: justify;
     text-justify: inter-word;
@@ -35,6 +37,8 @@ section {
 img {
     width: 100%
 }
+
+                                        /* NAVBAR STYLING */
 
 .navbar {
     font-weight: 700;
@@ -66,6 +70,8 @@ img {
     color: white;
 }
 
+                                        /* INTRO STYLING */
+
 #intro h1 {
     color: #f9004d;
     font-weight: 700;
@@ -81,6 +87,9 @@ img {
     border-radius: 5px;
     box-shadow: 5px 5px 10px black;
 }
+
+                                        /* ABOUT STYLING */
+
 #about
 {
     padding-top: 120px;
@@ -92,6 +101,8 @@ img {
 #about span {
     font-size: 30px;
 }
+
+                                        /* SKILLS STYLING */
 
 #skills .info {
     width: 100%;
@@ -159,6 +170,8 @@ img {
     animation: css 2s;
 }
 
+                                            /* SERVICES STYLING */
+
 #services .s-box .s-img img {
     width: 22%;
 }
@@ -173,7 +186,7 @@ img {
 #services .s-box h3 {
     font-weight: 700;
 }
-
+                                            /* RESUME STYLING */
 #resume button {
     padding: 10px;
     color: white;
@@ -219,6 +232,7 @@ img {
     animation: none;
 }
 
+                                                /* CONTACCT STYLING */
 #contact img
 {
     width: 3%;
@@ -234,6 +248,7 @@ img {
     font-weight: bold;
 }
 
+                                               /* FOOTER STYLING */
 #footer
 {
     /* background-color: #f9004d; */

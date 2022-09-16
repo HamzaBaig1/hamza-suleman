@@ -1,32 +1,42 @@
 @media screen and (max-width: 1199px) {
     #services .s-box {
-        
+
         padding: 7px;
-        
+
     }
 }
+
 @media screen and (max-width: 991px) {
-    .navbar-nav .nav-item a:hover
-{
-    color: black;
-    transform: none;
-}
+    .navbar-nav .nav-item a:hover {
+        color: black;
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
-    #services .s-box
-    {
+    #about {
+        padding-top: 180px;
+    }
+
+    #services {
+        padding-top: 180px;
+    }
+
+    #services .s-box {
         width: 70%;
         margin: auto;
     }
+
     #services .s-box .s-img img {
         width: 10%;
     }
+
     #services .s-box h3 {
         font-weight: 700;
         font-size: 20px;
     }
+
     #services .s-box p {
         font-size: 14px;
         width: 100%;
@@ -38,6 +48,9 @@
 }
 
 @media screen and (max-width: 425px) {
+    #skills {
+        padding-top: 180px;
+    }
 
     p {
         font-size: 12px;
@@ -46,25 +59,31 @@
     h3 {
         font-size: 20px;
     }
-     #about span {
+
+    #about span {
         font-size: 20px;
     }
-     #skills span {
+
+    #skills span {
         font-size: 20px;
     }
-    #skills .info h5
-    {
+
+    #skills .info h5 {
         font-size: 15px;
     }
-     #services span {
+
+    #services span {
         font-size: 20px;
     }
-     #resume span {
+
+    #resume span {
         font-size: 20px;
     }
-     #contact span {
+
+    #contact span {
         font-size: 20px;
     }
+
     #services .s-box .s-img img {
         width: 20%;
     }
@@ -72,56 +91,59 @@
     #contact img {
         width: 7%;
     }
+
     #contact h4 {
         font-weight: 300;
     }
 
-} 
+}
+
 @media screen and (max-width: 375px) {
 
-    #about
-{
-    padding-top: 180px;
-}
-    #skills
-{
-    padding-top: 180px;
-}
-    #services
-{
-    padding-top: 180px;
-}
-
-@media screen and (max-width: 320px) {
-
-    #about
-{
-    padding-top: 180px;
-}
-    #skills
-{
-    padding-top: 180px;
-}
-    #services
-{
-    padding-top: 180px;
-}
-    #ab
-{
-    padding-top: 180px;
-}
-    #contact img {
-        width: 10%;
-    }
-    #contact h4 {
-        font-size: 18px;
-        font-weight: 300;
-    }
-    #services .s-box
-    {
-        width: 100%;
-       
+    #about {
+        padding-top: 180px;
     }
 
-    
+    #skills {
+        padding-top: 180px;
+    }
+
+    #services {
+        padding-top: 180px;
+    }
 }
+
+    @media screen and (max-width: 320px) {
+
+        #about {
+            padding-top: 180px;
+        }
+
+        #skills {
+            padding-top: 180px;
+        }
+
+        #services {
+            padding-top: 180px;
+        }
+
+        #ab {
+            padding-top: 180px;
+        }
+
+        #contact img {
+            width: 10%;
+        }
+
+        #contact h4 {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        #services .s-box {
+            width: 100%;
+
+        }
+
+
+     }
